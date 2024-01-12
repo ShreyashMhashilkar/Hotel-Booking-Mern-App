@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import OrderCard from "./OrderCard";
-import { Typography } from "@mui/material";
+
+import { Box, Typography, TextField, Button } from "@mui/material";
 const UserOrder = () => {
     const [orders, setOrders] = useState([]);
 
@@ -44,13 +45,16 @@ const UserOrder = () => {
                 ))
             ) : (
                 <Typography
-                variant="h4"
-                sx={{ textTransform: "uppercase" }}
-                padding={3}
-                textAlign="center"
-                color="white"
-            >
-                You Haven't Booked a Hotel</Typography>
+
+                        variant="h4"
+                        sx={{ textTransform: "uppercase" }}
+                        padding={3}
+                        textAlign="center"
+                        color="white"
+                    >
+               You Haven't Booked a Hotel
+                            </Typography>
+
             )}
         </div>
     );
