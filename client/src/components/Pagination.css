@@ -1,0 +1,18 @@
+.pagination button.active {
+    font-weight: 900;
+
+    background: rgb(64, 0, 255);
+    color: #101010;
+}
+
+.pagination {
+    /* display: inline-block; */
+    float:right;
+}
+
+.pagination button {
+    color: rgb(0, 0, 0);
+    float: right;
+    padding: 8px 16px;
+    text-decoration: none;
+}
