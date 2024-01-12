@@ -9,12 +9,12 @@ import Payment from './components/Payment';
 import ProtectedRoutes from './components/ProtectedRoutes';
 import ProtectedRoutesBook from './components/ProtectedRoutesBook';
 import ProtectedRoutesOrder from './components/ProtectedRoutesOrder';
-import NavBar from './components/Navbar';
+import Navbar from './components/Navbar';
 function App() {
   return (
     <>
       <Router>
-        <NavBar/>        
+        <Navbar/>        
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path="/login" element={<Login />} />
