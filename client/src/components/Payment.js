@@ -1,5 +1,3 @@
-// import { useContext } from "react";
-// import { MovieContext } from "../context/BookingContext";
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -43,7 +41,7 @@ const Payment = () => {
 
     const handleOrder = async (e) => {
         try {
-            const { data } = await axios.post("http://localhost:8040/api/v1/order/create-order", {
+            const { data } = await axios.post("https://hotel-booking-mern-app-backend.onrender.com/api/v1/order/create-order", {
                 hotelname: orderItem[0][0].hotelname,
                 checkin: orderItem[0].checkin,
                 checkout: orderItem[0].checkout,
@@ -62,8 +60,7 @@ const Payment = () => {
                     width: '300px'
                 });
                 setTimeout(navigateTO, 600)
-                // toast.success("Hotel successfully booked");
-                // navigate("/");
+                
             }
         } catch (error) {
             console.log(error);

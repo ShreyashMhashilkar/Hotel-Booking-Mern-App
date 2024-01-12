@@ -9,7 +9,7 @@ import Payment from './components/Payment';
 import ProtectedRoutes from './components/ProtectedRoutes';
 import ProtectedRoutesBook from './components/ProtectedRoutesBook';
 import ProtectedRoutesOrder from './components/ProtectedRoutesOrder';
-import NavBar from './components/NavBar';
+import NavBar from './components/Navbar';
 function App() {
   return (
     <>

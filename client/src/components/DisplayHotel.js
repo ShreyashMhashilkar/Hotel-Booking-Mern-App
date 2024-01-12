@@ -1,6 +1,4 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
@@ -11,7 +9,6 @@ import Grid from '@mui/material/Grid';
 import { useDispatch, useSelector } from "react-redux";
 import { add } from '../redux/bookSlice';
 import { useNavigate } from 'react-router-dom';
-import Payment from './Payment';
 
 const DisplayHotel = ({ item }) => {
   let isLogin = useSelector((state) => state.isLogin);

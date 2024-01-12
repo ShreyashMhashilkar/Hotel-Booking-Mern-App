@@ -18,7 +18,6 @@ const FilterHotel = ({ boards, onBoardFilter, ratings, onRatingFilter, propertys
 
   const handleInput = (field) => (event) => {
     const { value } = event.target;
-    // console.log(event.target.value)
     setFilters({
       ...filters,
       [field]: value,
@@ -77,7 +76,6 @@ const FilterHotel = ({ boards, onBoardFilter, ratings, onRatingFilter, propertys
       </Box>
       <Box m={2}
         sx={{
-          // width: '100%',
           textAlign: 'center'
         }}
       >

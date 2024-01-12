@@ -1,15 +1,11 @@
-import { isAllOf } from "@reduxjs/toolkit";
 import { useSelector } from "react-redux";
-import { useNavigate,Navigate,Outlet } from 'react-router-dom';
+import {Navigate } from 'react-router-dom';
 
 const ProtectedRoutes = ({children})=>{
     let isLogin = useSelector((state) => state.isLogin);
-    isLogin = isLogin || localStorage.getItem("userId");
-    
-    return(
-       
-        isLogin ? children : <Navigate to="/login"/>
-    
+    isLogin = isLogin || localStorage.getItem("userId");    
+    return(       
+        isLogin ? children : <Navigate to="/login"/>    
     )
 }
 
