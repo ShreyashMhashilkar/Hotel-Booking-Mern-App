@@ -59,7 +59,7 @@ const CreateOrder = () => {
 
     return (
         <>
-            <Box container sx={{ flexGrow: 1, mx: 8 }} >
+            <Box container sx={{ flexGrow: 1, mx: 4 }} >
                 <Grid container spacing={2} mt={2}>
 
                     <Grid item xs={12} sm={6} lg={4} md={6}  >
@@ -100,7 +100,7 @@ const CreateOrder = () => {
                                         <FormLabel>CHECK-IN</FormLabel>
                                         <TextField
                                             sx={{
-                                                width: { sm: 200, md: 380 },
+                                                width: { sm: 200, md: 410 },
                                             }}
                                             required
                                             name="checkin"
@@ -118,7 +118,7 @@ const CreateOrder = () => {
                                         <FormLabel>CHECK-OUT</FormLabel>
                                         <TextField
                                             sx={{
-                                                width: { sm: 200, md: 380 }, mb: 2
+                                                width: { sm: 200, md: 410 }, mb: 2
                                             }}
                                             required
                                             name="checkout"
