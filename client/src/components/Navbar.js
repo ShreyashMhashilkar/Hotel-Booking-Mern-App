@@ -5,7 +5,7 @@ import xbutton from '../asset/x.png';
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../redux/authSlice";
 import { useNavigate } from "react-router-dom";
-const NavBar = () => {
+const Navbar = () => {
     const [isMobile, setIsMobile] = useState(false);
     let isLogin = useSelector((state) => state.isLogin);
     isLogin = isLogin || localStorage.getItem("userId");
@@ -71,4 +71,4 @@ const NavBar = () => {
         </>
     )
 }
-export default NavBar;
+export default Navbar;
